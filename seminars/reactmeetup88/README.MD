@@ -3,7 +3,9 @@
 Event: [React meetup #88](https://www.meetup.com/reactjs-bangalore/events/306320480/)
 Date: 12th April 2025
 
+![image](./reactMeetup.png)
 
+[My Handwritten Notes](https://github.com/kurtzace/diary-2025/blob/main/seminars/reactmeetup88/react%20meet%20up%2088%20AI%20in%20web%20development%202025-04-12%2021-57.pdf)
 
 A series of presentations centered on artificial intelligence and its applications in web development, particularly within the React ecosystem. Several talks focus on integrating AI tools and SDKs from platforms like Vercel and ElevenLabs to enhance React applications with features like AI-powered search and voice chatbots. Additionally, one presentation addresses the critical topic of AI security vulnerabilities, specifically one-pixel attacks. 
 
