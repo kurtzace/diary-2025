@@ -26,86 +26,86 @@ Agenda
 
 ### The Dawn of AI in Web Development
 
-*   Imagine the power of **AI as JavaScript APIs natively available in Chrome** [1].
-*   **AI is already here**, not just the future of Chrome [2].
-*   Let's build **smarter, faster, and with more fun — right in the browser** [2].
+*   Imagine the power of **AI as JavaScript APIs natively available in Chrome** .
+*   **AI is already here**, not just the future of Chrome .
+*   Let's build **smarter, faster, and with more fun — right in the browser** .
 
 ---
 
 ### Vishwesh Jainkuniya: AI for Web Development
 
-*   Lead Engineer at eka.care [1, 3].
-*   Focused on leveraging **AI APIs natively available in Chrome** to build AI web products [1, 4].
-*   **Traditional client-server model evolving** towards browser as the compute engine for AI [1, 5].
-*   **Modern way:** Utilizing browser's compute power [1].
-*   **Key Libraries:** TensorFlow.js, face-api.js, ml5js, kalidokit, Handtrack.js [1, 6].
-*   **Real-world applications** being built directly in the browser [1].
-*   **AI-native extensions** are coming [6].
-*   Examples: **Translate**, **Language Detector**, **Summarizer**, utilizing browser's built-in capabilities [6].
-*   Demonstrated creating a translator with `self.ai.translator.create()` [5, 6].
-*   Discussed the benefits: **Cost**, **Computation**, **Deployment**, **Load**, **Scale**, **Privacy**, **User Experience**, **Offline AI usage** [7].
-*   Highlighted **AI in DevTools** and **Help in write** as future possibilities [2, 7].
-*   **AI won’t replace developers, but developers who use AI will replace those who don’t** [2].
-*   Imagine sites adjusting layout based on client-side AI predictions [2].
+*   Lead Engineer at eka.care .
+*   Focused on leveraging **AI APIs natively available in Chrome** to build AI web products .
+*   **Traditional client-server model evolving** towards browser as the compute engine for AI .
+*   **Modern way:** Utilizing browser's compute power .
+*   **Key Libraries:** TensorFlow.js, face-api.js, ml5js, kalidokit, Handtrack.js .
+*   **Real-world applications** being built directly in the browser .
+*   **AI-native extensions** are coming .
+*   Examples: **Translate**, **Language Detector**, **Summarizer**, utilizing browser's built-in capabilities .
+*   Demonstrated creating a translator with `self.ai.translator.create()` .
+*   Discussed the benefits: **Cost**, **Computation**, **Deployment**, **Load**, **Scale**, **Privacy**, **User Experience**, **Offline AI usage** .
+*   Highlighted **AI in DevTools** and **Help in write** as future possibilities .
+*   **AI won’t replace developers, but developers who use AI will replace those who don’t** .
+*   Imagine sites adjusting layout based on client-side AI predictions .
 
 ---
 
 ### Milind Mishra: AI for React Developers | A Deep Dive into the Vercel's AI SDK
 
-*   Product Engineer at Merlin AI [3].
-*   Presented a deep dive into **Vercel's AI SDK** [3].
-*   Showcased the **"ai-for-react-developers" project** on GitHub [4, 8].
+*   Product Engineer at Merlin AI .
+*   Presented a deep dive into **Vercel's AI SDK** .
+*   Showcased the **"ai-for-react-developers" project** on GitHub .
 *   The project **demonstrates AI integration and best practices for React developers** [8-10].
 *   Highlights various **AI-powered features and tools** using the latest web technologies [8-10].
-*   **Tech Stack:** Next.js 15.2.4 with React 19, TailwindCSS, Vercel AI SDK, multiple provider SDKs (@ai-sdk/openai, @ai-sdk/google, @ai-sdk/groq), React-specific hooks (@ai-sdk/react) [9].
+*   **Tech Stack:** Next.js 15.2.4 with React 19, TailwindCSS, Vercel AI SDK, multiple provider SDKs (@ai-sdk/openai, @ai-sdk/google, @ai-sdk/groq), React-specific hooks (@ai-sdk/react) .
 *   **Key Features:**
-    *   **Multi-Model Support:** OpenAI (GPT-3.5 Turbo, GPT-4, GPT-4 Turbo), Google AI (Gemini Pro, Gemini 1.5 Pro, Gemini Pro Vision), Groq (Llama2-70B, Mixtral-8x7B) [11].
-    *   **Advanced AI Capabilities:** Text Generation, Streaming Responses, Structured Data, Tool Calling (OpenAI), Image Generation (Gemini Pro Vision) [11].
-    *   **Vercel AI SDK Features:** Streaming UI components with React suspense, Type-safe schema validation with Zod, Standardized API interfaces, Edge runtime support [12].
-*   Comprehensive **API Routes** demonstrating different AI capabilities for each provider [13].
-*   Link to slides: [https://milindmishra.com/slide/ai-for-react-developers](https://milindmishra.com/slide/ai-for-react-developers) [4].
-*   Link to GitHub repository: [https://github.com/thatbeautifuldream/ai-for-react-developers](https://github.com/thatbeautifuldream/ai-for-react-developers) [4].
+    *   **Multi-Model Support:** OpenAI (GPT-3.5 Turbo, GPT-4, GPT-4 Turbo), Google AI (Gemini Pro, Gemini 1.5 Pro, Gemini Pro Vision), Groq (Llama2-70B, Mixtral-8x7B) .
+    *   **Advanced AI Capabilities:** Text Generation, Streaming Responses, Structured Data, Tool Calling (OpenAI), Image Generation (Gemini Pro Vision) .
+    *   **Vercel AI SDK Features:** Streaming UI components with React suspense, Type-safe schema validation with Zod, Standardized API interfaces, Edge runtime support .
+*   Comprehensive **API Routes** demonstrating different AI capabilities for each provider .
+*   Link to slides: [https://milindmishra.com/slide/ai-for-react-developers](https://milindmishra.com/slide/ai-for-react-developers) .
+*   Link to GitHub repository: [https://github.com/thatbeautifuldream/ai-for-react-developers](https://github.com/thatbeautifuldream/ai-for-react-developers) .
 
 ---
 
 ### Ajay Lakshman: Making React Apps Smarter with AI-Powered Search
 
-*   Full Stack Developer at FCL Australia [3].
-*   Discussed the concept of **making React applications smarter with AI-powered search** [3].
-*   Potential technologies mentioned in related context: **Pinecone** as a vector database, leveraging **vector embeddings** for semantic search [14].
-*   The goal is to implement **intent-based search** for a more intelligent user experience [14].
-*   Alternative search technologies like **Chrome's native hierarchical navigable small world (HNSW)** or **IVF (Inverted File Index)** were also noted [14].
+*   Full Stack Developer at FCL Australia .
+*   Discussed the concept of **making React applications smarter with AI-powered search** .
+*   Potential technologies mentioned in related context: **Pinecone** as a vector database, leveraging **vector embeddings** for semantic search .
+*   The goal is to implement **intent-based search** for a more intelligent user experience .
+*   Alternative search technologies like **Chrome's native hierarchical navigable small world (HNSW)** or **IVF (Inverted File Index)** were also noted .
 
 ---
 
 ### Pratik Yadav: Building a Smart AI Voice Chatbot with React and ElevenLabs AI
 
-*   Software Engineer at Liftoff LLC [3].
-*   Focused on **building smart AI voice chatbots using React and ElevenLabs AI** [3].
-*   **Tech Stack** mentioned in a related context for Smart AI Chatbots included: Auto Speech Recognition (ASR), Natural Language Processing (NLP), Text-to-Speech (TTS), and Machine Learning (ML) for learning from experience [14].
-*   **ElevenLabs AI** is used for the **voice search** capabilities of the chatbot [14].
-*   The architecture involves React components interacting with AI models (like OpenAI or Gemini) and the ElevenLabs SDK for voice output [14].
+*   Software Engineer at Liftoff LLC .
+*   Focused on **building smart AI voice chatbots using React and ElevenLabs AI** .
+*   **Tech Stack** mentioned in a related context for Smart AI Chatbots included: Auto Speech Recognition (ASR), Natural Language Processing (NLP), Text-to-Speech (TTS), and Machine Learning (ML) for learning from experience .
+*   **ElevenLabs AI** is used for the **voice search** capabilities of the chatbot .
+*   The architecture involves React components interacting with AI models (like OpenAI or Gemini) and the ElevenLabs SDK for voice output .
 
 ---
 
 ### Khushi Gupta: Fooling AI: The Hidden Threat of One-Pixel Attacks
 
-*   Cyber Security Engineer [3].
-*   Presented on **"Fooling AI: The Hidden Threat of One-Pixel Attacks"** [3].
-*   Highlighted the **cybersecurity vulnerabilities** associated with AI systems [3, 15].
-*   Discussed techniques like adding **imperceptible noise** to images or training **surrogate models** to fool AI [15].
-*   Mentioned specific attack vectors like **one-pixel attacks** [3, 15].
+*   Cyber Security Engineer .
+*   Presented on **"Fooling AI: The Hidden Threat of One-Pixel Attacks"** .
+*   Highlighted the **cybersecurity vulnerabilities** associated with AI systems .
+*   Discussed techniques like adding **imperceptible noise** to images or training **surrogate models** to fool AI .
+*   Mentioned specific attack vectors like **one-pixel attacks** .
 
 ---
 
 ### General Themes and Discussions
 
 *   The meetup highlighted the growing importance and accessibility of **AI in web development**.
-*   Emphasis on leveraging **browser-based AI** for enhanced performance, privacy, and user experience [1, 2, 7].
-*   The **Vercel AI SDK** provides a powerful and streamlined way to integrate various AI capabilities into React applications [9, 12].
-*   AI-powered search and voice interfaces are making web applications smarter and more interactive [14].
-*   It's crucial to be aware of the **security implications** of AI, such as adversarial attacks [15].
-*   The sentiment was that **AI will augment developer capabilities**, not replace them entirely [2].
+*   Emphasis on leveraging **browser-based AI** for enhanced performance, privacy, and user experience .
+*   The **Vercel AI SDK** provides a powerful and streamlined way to integrate various AI capabilities into React applications .
+*   AI-powered search and voice interfaces are making web applications smarter and more interactive .
+*   It's crucial to be aware of the **security implications** of AI, such as adversarial attacks .
+*   The sentiment was that **AI will augment developer capabilities**, not replace them entirely .
 
 ---
 
@@ -127,20 +127,20 @@ Agenda
 
 ### Smart AI Voice Chatbots with React
 
-*   **Pratik Yadav** from **Liftoff LLC** and **GeekyAnts** presented on building smart AI voice chatbots using **React** [1].
-*   The focus was on integrating **voice search** capabilities into React applications [1].
+*   **Pratik Yadav** from **Liftoff LLC** and **GeekyAnts** presented on building smart AI voice chatbots using **React** .
+*   The focus was on integrating **voice search** capabilities into React applications .
 
 ---
 
 ### Key Technologies
 
-*   The tech stack for building such chatbots includes [1]:
+*   The tech stack for building such chatbots includes :
     *   **ASR (Auto Speech Recognition)**
     *   **NLP (Natural Language Processing)**: for context and embedding.
     *   **TTS (Text-to-Speech)**
     *   **ML (Machine Learning)**: to learn from experience and accuracy.
-*   **ElevenLabs AI** was specifically used for the **voice search** functionality [1, 2].
-*   The chatbot architecture involves [1]:
+*   **ElevenLabs AI** was specifically used for the **voice search** functionality .
+*   The chatbot architecture involves :
     *   **React.js** components for the user interface.
     *   Interaction with **AI Models** (e.g., OpenAI, Gemini).
     *   Integration of the **ElevenLabs SDK** for voice output (TTS).
@@ -150,8 +150,8 @@ Agenda
 
 ### Voice Integration
 
-*   **ElevenLabs/React** was mentioned in the context of **TTS (Text-to-Speech)** and providing the **voice systems engine** [1].
-*   The flow likely involves the React app capturing voice input (using ASR), processing it with an AI model (NLP), and then using ElevenLabs AI to generate voice output based on the AI's response [1].
+*   **ElevenLabs/React** was mentioned in the context of **TTS (Text-to-Speech)** and providing the **voice systems engine** .
+*   The flow likely involves the React app capturing voice input (using ASR), processing it with an AI model (NLP), and then using ElevenLabs AI to generate voice output based on the AI's response .
 
 ---
 
@@ -161,8 +161,8 @@ Agenda
 
 ### Smarter Search in React Apps
 
-*   **Ajay Lakshman**, a Full Stack Developer at FCL Australia, discussed how to enhance React applications with **AI-powered search** [1, 2].
-*   The core idea is to move beyond keyword-based search to **intent-based search** [2].
+*   **Ajay Lakshman**, a Full Stack Developer at FCL Australia, discussed how to enhance React applications with **AI-powered search** .
+*   The core idea is to move beyond keyword-based search to **intent-based search** .
 
 ---
 
@@ -175,30 +175,30 @@ Agenda
 
 ### The Solution: AI-Powered Semantic Search
 
-*   **AI-powered search**, particularly **semantic search**, aims to understand the meaning behind the user's query [2].
-*   This involves using **vector embeddings** to represent the meaning of both the search query and the content [2].
+*   **AI-powered search**, particularly **semantic search**, aims to understand the meaning behind the user's query .
+*   This involves using **vector embeddings** to represent the meaning of both the search query and the content .
 
 ---
 
 ### Key Technology: Vector Databases
 
-*   **Pinecone** was mentioned as a potential **vector database** [2].
-*   A vector database is used to store and efficiently query these **vector embeddings** [2].
+*   **Pinecone** was mentioned as a potential **vector database** .
+*   A vector database is used to store and efficiently query these **vector embeddings** .
 
 ---
 
 ### How it Works (Conceptual)
 
 1.  When content is added to the application, it is processed by an AI model to generate **vector embeddings** representing its meaning.
-2.  These **vector embeddings** are stored in a **vector database** like Pinecone [2].
+2.  These **vector embeddings** are stored in a **vector database** like Pinecone .
 3.  When a user performs a search, their query is also converted into a **vector embedding** using the same AI model.
-4.  The **vector database** then finds the content whose **vector embeddings** are most similar to the query's embedding, based on semantic similarity (meaning) rather than just keyword matching [2].
+4.  The **vector database** then finds the content whose **vector embeddings** are most similar to the query's embedding, based on semantic similarity (meaning) rather than just keyword matching .
 
 ---
 
 ### Alternative Search Technologies
 
-*   The presentation also noted alternative search technologies [2]:
+*   The presentation also noted alternative search technologies :
     *   **Chrome's native HNSW (Hierarchical Navigable Small World)**
     *   **IVF (Inverted File Index)**
 *   These are different indexing and search algorithms that can be used, potentially with embeddings, to improve search efficiency and relevance.
@@ -221,7 +221,7 @@ Agenda
 
 ### Benefits of AI-Powered Search
 
-*   **Improved Relevance:** More accurate and relevant search results by understanding the user's intent [2].
+*   **Improved Relevance:** More accurate and relevant search results by understanding the user's intent .
 *   **Enhanced User Experience:** Users can find what they are looking for more easily, even with imprecise queries.
 *   **Discovery of Related Content:** Semantic search can uncover content that is conceptually related but uses different keywords.
 
@@ -233,21 +233,21 @@ Agenda
 
 ### The Hidden Threat: One-Pixel Attacks
 
-*   Presented by **Khushi Gupta**, a Cyber Security Engineer [1].
-*   Focuses on the **cybersecurity vulnerabilities** of AI systems [2].
-*   Highlights how seemingly insignificant modifications can have a significant impact on AI models [2].
+*   Presented by **Khushi Gupta**, a Cyber Security Engineer .
+*   Focuses on the **cybersecurity vulnerabilities** of AI systems .
+*   Highlights how seemingly insignificant modifications can have a significant impact on AI models .
 
 ---
 
 ### What are One-Pixel Attacks?
 
-*   Involve adding or modifying just **one pixel** in an image [2].
-*   These changes are often **imperceptible to the human eye** [2].
-*   Despite their minimal nature, they can **fool AI models** into making incorrect predictions [2].
+*   Involve adding or modifying just **one pixel** in an image .
+*   These changes are often **imperceptible to the human eye** .
+*   Despite their minimal nature, they can **fool AI models** into making incorrect predictions .
 
 ---
 
-### Attack Vectors Discussed [2]:
+### Attack Vectors Discussed :
 
 *   **One pixel attacks**: Directly manipulating a single pixel.
 *   **Add noise to image**: Introducing subtle random disturbances.
@@ -260,6 +260,6 @@ Agenda
 
 ### Impact and Implications
 
-*   Demonstrates the **fragility** of some AI models to adversarial attacks [2].
-*   Raises concerns about the **security and reliability** of AI in critical applications [2].
-*   Highlights the need for **robust AI models** and **defense mechanisms** against such attacks [2].
+*   Demonstrates the **fragility** of some AI models to adversarial attacks .
+*   Raises concerns about the **security and reliability** of AI in critical applications .
+*   Highlights the need for **robust AI models** and **defense mechanisms** against such attacks .
