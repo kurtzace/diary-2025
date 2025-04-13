@@ -589,3 +589,37 @@ export default async function handler(req, res) {
 *   Demonstrates the **fragility** of some AI models to adversarial attacks .
 *   Raises concerns about the **security and reliability** of AI in critical applications .
 *   Highlights the need for **robust AI models** and **defense mechanisms** against such attacks .
+
+
+## Most speakers were using github copilot
+- [cheatsheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
+- [agent mode](https://www.youtube.com/watch?v=dutyOc_cAEU)
+
+
+**Essential GitHub Copilot Tips and Tricks:**
+
+*   **Leveraging Copilot Chat, Edit, and Agent Modes:** Visual Studio Code offers different ways to interact with Copilot.
+    *   **Ask Mode:** Provides direct answers to your prompts in the chat sidebar, similar to standard chat interactions.
+    *   **Edit Mode:** Allows Copilot to create and modify files in your workspace based on your prompts.
+    *   **Agent Mode:** Functions more like an autonomous developer, capable of executing multiple steps, including running terminal commands (with your confirmation) and modifying files to achieve a given task.
+*   **Using the `@fetch` Tool in Agent Mode:** Within Agent Mode (and potentially other chat modes), you can use the `#` key to access tools like `@fetch`. This allows Copilot to fetch the content of a URL and use it as context for your requests. For example, you can provide a link to online documentation and ask Copilot to follow the instructions therein.
+*   **Providing Context is Key:** To get the most accurate and relevant results from Copilot, it's crucial to provide sufficient context in your prompts. This includes details about your project, the specific task you want to accomplish, and any relevant files or information.
+*   **Utilizing a Project Requirements Document (PRD):** A well-defined PRD, like the one in **burkeholland's gist** ([https://gist.github.com/burkeholland/24802296b5bfaaf7fb775c81cd626512](https://gist.github.com/burkeholland/24802296b5bfaaf7fb775c81cd626512)), can significantly enhance Copilot's ability to understand the goals of your project. You can provide this PRD to Copilot by:
+    *   Adding it as an attachment in the Copilot chat window.
+    *   Simply opening the `prd.md` file in your editor.
+*   **Considering Custom Instructions:** You can provide Copilot with custom instructions outlining best practices, technologies used, and naming conventions for your project. **burkeholland** generated such a file using AI.
+*   **Leveraging MCP Servers for Database Context:** Model Context Protocol (MCP) servers can be used to enable VS Code and Copilot to interact with databases like PostgreSQL. By adding an MCP server and providing connection details, you can allow Copilot to understand your database schema. You can add an MCP server in VS Code using the command palette (`MCP add server`).
+*   **Reviewing and Verifying Copilot's Actions:** Especially in Edit and Agent modes where Copilot can modify your files and run commands, it's important to carefully review its proposed actions and verify their correctness before approving them. The example in the video showed Copilot making an initial incorrect suggestion.
+*   **Utilizing Next Edit Suggestions:** VS Code may offer "next edit suggestions" based on changes you make, anticipating further necessary modifications.
+*   **"Bring Your Own Key" for AI Models:** VS Code allows you to configure Copilot to use your own API keys for different AI models, such as Gemini, potentially giving you access to newer models or specific configurations. This can be managed in the models section of VS Code.
+
+**Bulleted Summary of Agent Mode:**
+
+*   **Autonomous Task Execution:** Agent Mode allows Copilot to perform more complex tasks autonomously, acting more like a human developer given the same instructions.
+*   **Multi-Step Operations:** It can handle multiple steps required to complete a task, such as installing dependencies, modifying configuration files, creating new files, and even running development servers.
+*   **Terminal Interaction:** Agent Mode can propose and execute commands in the terminal, requiring your explicit permission before doing so.
+*   **Contextual Awareness:** Agent Mode leverages the context you provide, including open files, chat history, and especially detailed project requirements like a PRD.
+*   **Iterative Problem Solving:** As demonstrated in the video, the agent can proceed through the necessary steps to achieve a goal, like setting up Tailwind CSS in an Astro project, even correcting initial missteps by referring to documentation.
+*   **Requires User Confirmation:** For actions that involve modifying the system or running commands, Agent Mode typically asks for user confirmation, enhancing security and control.
+*   **Enabling Agent Mode:** Agent Mode can be enabled in Visual Studio Code through a dropdown in the chat sidebar (if available) or by checking the "Agent" setting in User Settings. The rollout of this feature might be gradual.
+*   **Enhanced Productivity:** Users who have tried Agent Mode have found it to be a significant step forward and "absolutely fantastic" for building applications.
