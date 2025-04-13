@@ -26,7 +26,7 @@ Agenda
 [**https://milindmishra.com/slide/ai-for-react-developers**](https://milindmishra.com/slide/ai-for-react-developers)[**https://github.com/thatbeautifuldream/ai-for-react-developers**](https://github.com/thatbeautifuldream/ai-for-react-developers)
         
 
-### The Dawn of AI in Web Development
+# The Dawn of AI in Web Development
 
 *   Imagine the power of **AI as JavaScript APIs natively available in Chrome** .
 *   **AI is already here**, not just the future of Chrome .
@@ -34,7 +34,7 @@ Agenda
 
 ---
 
-### Vishwesh Jainkuniya: AI for Web Development
+## Vishwesh Jainkuniya: AI for Web Development
 
 *   Lead Engineer at eka.care .
 *   Focused on leveraging **AI APIs natively available in Chrome** to build AI web products .
@@ -50,9 +50,107 @@ Agenda
 *   **AI won’t replace developers, but developers who use AI will replace those who don’t** .
 *   Imagine sites adjusting layout based on client-side AI predictions .
 
+
+### Code snippets
+Here are the markdown code snippets for the translator and summarizer, as mentioned in the context of Vishwesh Jainkuniya's presentation "AI for Web Development":
+
+### Translator
+```javascript
+const translator2 = await self.ai.translator.create({
+  sourceLanguage: 'es',
+  targetLanguage: 'hi',
+  monitor(m) {
+    m.addEventListener('downloadprogress', (e) => {
+      console.log(`Downloaded ${e.loaded} of ${e.total} bytes.`);
+    });
+  },
+});
+
+await translator2.translate("Hello, how are you");
+```
+This snippet demonstrates creating a translator object using `self.ai.translator.create()` with specified source and target languages and then translating text using the `translate()` method. The `monitor` function shows how to track the download progress of the necessary AI model.
+
+### Summarizer
+```javascript
+const summarizer = await ai.summarizer.create({
+  monitor(m) {
+    m.addEventListener('downloadprogress', (e) => {
+      console.log(`Downloaded ${e.loaded} of ${e.total} bytes.`);
+    });
+  }
+});
+
+const summary = await summarizer.summarize(text, {
+  context: 'These are a prescription data intended to be consumed by doctor.',
+});
+```
+This snippet shows how to create a summarizer object using `ai.summarizer.create()` and then summarize text using the `summarize()` method. It also includes an optional `context` parameter to guide the summarization. Similar to the translator, it includes a `monitor` function to track the download progress.
+
+Regarding **face detection using face-api.js** and **image classification using TensorFlow.js**, the sources mention these as **key libraries** for building AI-powered web applications directly in the browser. However, the provided snippets in the sources do not give specific examples of face detection or image classification code using these libraries.
+
+To use **face-api.js** for face detection, you would typically load the necessary models, access the user's camera or load an image, and then use the library's functions to detect faces. Here's a general structure:
+
+```javascript
+// Load face detection models
+await faceapi.nets.ssdMobilenetv1.loadFromUri('/models');
+await faceapi.nets.faceLandmark68Net.loadFromUri('/models');
+await faceapi.nets.faceRecognitionNet.loadFromUri('/models');
+
+// Get video stream or image element
+const video = document.getElementById('video');
+const canvas = document.getElementById('canvas');
+const displaySize = { width: video.width, height: video.height };
+faceapi.matchDimensions(canvas, displaySize);
+
+// Detect faces in the video stream
+video.addEventListener('play', async () => {
+  setInterval(async () => {
+    const detections = await faceapi.detectAllFaces(video, new faceapi.SsdMobilenetv1Options()).withFaceLandmarks().withFaceDescriptors();
+    const resizedDetections = faceapi.resizeResults(detections, displaySize);
+    canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+    faceapi.draw.drawDetections(canvas, resizedDetections);
+    faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
+  }, 100);
+});
+```
+
+For **image classification using TensorFlow.js**, you would typically load a pre-trained model (like MobileNet or Inception), load an image, preprocess it, and then use the model to make a prediction. Here's a general structure:
+
+```javascript
+// Load a pre-trained image classification model
+const model = await tf.loadLayersModel('https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_1.0_224/model.json');
+
+// Load an image element
+const image = document.getElementById('image');
+
+// Preprocess the image
+const tensor = tf.browser.fromPixels(image)
+  .resizeNearestNeighbor()
+  .toFloat()
+  .expandDims(0);
+
+const normalizedTensor = tensor.div(255.0);
+
+// Make a prediction
+const predictions = await model.predict(normalizedTensor).data();
+
+// Process the predictions
+const top5 = Array.from(predictions)
+  .map((p, i) => ({
+    probability: p,
+    className: IMAGENET_CLASSES[i]
+  }))
+  .sort((a, b) => b.probability - a.probability)
+  .slice(0, 5);
+
+console.log('Top 5 predictions:', top5);
+```
+
+Please note that these last two code structures are general examples and might require further setup (like including the libraries in your HTML and potentially loading model files). The essential point is that **face-api.js** and **TensorFlow.js** are key libraries enabling these kinds of AI functionalities directly in the web browser.
+
 ---
 
-### Milind Mishra: AI for React Developers | A Deep Dive into the Vercel's AI SDK
+## Milind Mishra: AI for React Developers | A Deep Dive into the Vercel's AI SDK
 
 *   Product Engineer at Merlin AI .
 *   Presented a deep dive into **Vercel's AI SDK** .
@@ -70,7 +168,7 @@ Agenda
 
 ---
 
-### Ajay Lakshman: Making React Apps Smarter with AI-Powered Search
+## Ajay Lakshman: Making React Apps Smarter with AI-Powered Search
 
 *   Full Stack Developer at FCL Australia .
 *   Discussed the concept of **making React applications smarter with AI-powered search** .
@@ -80,7 +178,7 @@ Agenda
 
 ---
 
-### Pratik Yadav: Building a Smart AI Voice Chatbot with React and ElevenLabs AI
+## Pratik Yadav: Building a Smart AI Voice Chatbot with React and ElevenLabs AI
 
 *   Software Engineer at Liftoff LLC .
 *   Focused on **building smart AI voice chatbots using React and ElevenLabs AI** .
@@ -90,7 +188,7 @@ Agenda
 
 ---
 
-### Khushi Gupta: Fooling AI: The Hidden Threat of One-Pixel Attacks
+## Khushi Gupta: Fooling AI: The Hidden Threat of One-Pixel Attacks
 
 *   Cyber Security Engineer .
 *   Presented on **"Fooling AI: The Hidden Threat of One-Pixel Attacks"** .
@@ -120,7 +218,8 @@ Agenda
 *   The future of web development involves a strong synergy between **human developers and AI tools.**
 
 ---
-
+---
+---
 
 
 ## Pratik Yadav: Building a Smart AI Voice Chatbot with React and ElevenLabs AI
@@ -155,9 +254,97 @@ Agenda
 *   **ElevenLabs/React** was mentioned in the context of **TTS (Text-to-Speech)** and providing the **voice systems engine** .
 *   The flow likely involves the React app capturing voice input (using ASR), processing it with an AI model (NLP), and then using ElevenLabs AI to generate voice output based on the AI's response .
 
+### Code Snippets
+**Example for generating text using OpenAI:**
+
+```javascript
+// In a React component or API route
+async function generateOpenAIText(prompt) {
+  const response = await fetch('/api/openai/generate-text', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ prompt }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+
+  const data = await response.json();
+  return data.output; // Assuming the API returns the generated text in 'output' field
+}
+```
+
+(`/api/openai/generate-text`) might look conceptually similar to this :
+
+```javascript
+// /pages/api/openai/generate-text.ts
+import { OpenAIStream, StreamingTextResponse } from 'ai';
+import OpenAI from 'openai';
+
+// Initialize OpenAI client (you would need your API key)
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+export const runtime = 'edge'; // For Vercel Edge Functions
+
+export default async function handler(req: Request): Promise<Response> {
+  const { prompt } = await req.json();
+
+  const response = await openai.chat.completions.create({
+    model: 'gpt-3.5-turbo',
+    stream: true,
+    messages: [
+      { role: 'user', content: prompt },
+    ],
+  });
+
+  // Convert the response into a friendly text-stream
+  const stream = OpenAIStream(response);
+
+  // Respond with the stream
+  return new StreamingTextResponse(stream);
+}
+```
+
+A conceptual example of how you might use the ElevenLabs SDK in a React component :
+
+```javascript
+// This is a conceptual example and might not reflect the exact ElevenLabs SDK API.
+import ElevenLabs from 'elevenlabs'; // Assuming an ElevenLabs SDK import
+
+// You would need to obtain and configure your API key
+const elevenLabsClient = new ElevenLabs({ apiKey: 'YOUR_ELEVENLABS_API_KEY' });
+
+async function generateAndPlayVoice(text, voiceId) {
+  try {
+    const audio = await elevenLabsClient.textToSpeech({
+      text: text,
+      voice_id: voiceId, // Specify the desired voice
+    });
+
+    // Assuming 'audio' is an audio blob or similar
+    const audioUrl = URL.createObjectURL(new Blob([audio]));
+    const audioElement = new Audio(audioUrl);
+    audioElement.play();
+  } catch (error) {
+    console.error('Error generating voice:', error);
+  }
+}
+
+// Example usage in a React component
+// generateAndPlayVoice("Hello, this is a test.", "YOUR_VOICE_ID");
+```
+
+
+
+
 ---
 
-### Ajay Lakshman: Making React Apps Smarter with AI-Powered Search
+## Ajay Lakshman: Making React Apps Smarter with AI-Powered Search
 
 ---
 
@@ -201,7 +388,7 @@ Agenda
 ### Alternative Search Technologies
 
 *   The presentation also noted alternative search technologies :
-    *   **Chrome's native HNSW (Hierarchical Navigable Small World)**
+    *   **Pinecone's native HNSW (Hierarchical Navigable Small World)**
     *   **IVF (Inverted File Index)**
 *   These are different indexing and search algorithms that can be used, potentially with embeddings, to improve search efficiency and relevance.
 
@@ -227,6 +414,143 @@ Agenda
 *   **Enhanced User Experience:** Users can find what they are looking for more easily, even with imprecise queries.
 *   **Discovery of Related Content:** Semantic search can uncover content that is conceptually related but uses different keywords.
 
+### code snippets
+Based on our previous discussion about AI-powered search and the potential use of OpenAI for generating vector embeddings, we can now add the specific **`text-embedding-ada-002`** model to the conceptual code snippets. While the sources don't directly mention this specific model, it is a relevant example of an OpenAI embedding model that could be used for this purpose.
+
+Here are the updated code snippets with the addition of **`text-embedding-ada-002`**:
+
+**1. Generating Vector Embeddings (Conceptual Backend Code):**
+
+```javascript
+// Conceptual Node.js backend code (using a hypothetical AI embedding service)
+async function generateEmbeddings(text) {
+  // **Using an OpenAI embedding model like text-embedding-ada-002**
+  // Replace with actual API call to OpenAI Embeddings API
+  const response = await fetch('https://api.openai.com/v1/embeddings', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer YOUR_OPENAI_API_KEY`, // Replace with your actual API key
+    },
+    body: JSON.stringify({
+      model: 'text-embedding-ada-002', // Specifying the OpenAI embedding model
+      input: text,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Error generating embeddings: ${response.status}`);
+  }
+
+  const data = await response.json();
+  return data.data.embedding; // Assuming the OpenAI API returns the embedding in this structure
+}
+
+async function processAndStoreContent(content) {
+  const embedding = await generateEmbeddings(content.text);
+  // Store the embedding in your vector database (e.g., Pinecone) along with the original content ID
+  await storeInVectorDatabase(content.id, embedding, content.text);
+}
+
+// Hypothetical function to interact with Pinecone or another vector database
+async function storeInVectorDatabase(id, embedding, text) {
+  // ... your vector database interaction logic here
+  console.log(`Stored embedding for ID ${id}:`, embedding.slice(0, 5), "...", `Text: ${text.slice(0, 20)}...`);
+}
+
+// Example usage
+const myContent = { id: 'doc123', text: 'A detailed explanation of quantum physics.' };
+processAndStoreContent(myContent);
+```
+
+**2. Generating Vector Embedding for the Search Query (Frontend or Backend):**
+
+```javascript
+// Conceptual React frontend code for generating query embedding (more common on backend for security/API key reasons)
+async function getQueryEmbedding(query) {
+  // **Using an OpenAI embedding model like text-embedding-ada-002**
+  // Similar API call as above to the OpenAI Embeddings API
+  const response = await fetch('https://api.openai.com/v1/embeddings', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer YOUR_OPENAI_API_KEY`, // Replace with your actual API key
+    },
+    body: JSON.stringify({
+      model: 'text-embedding-ada-002', // Specifying the OpenAI embedding model
+      input: query,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Error generating query embedding: ${response.status}`);
+  }
+
+  const data = await response.json();
+  return data.data.embedding;
+}
+
+// Example usage in a React component
+async function handleSearch(query) {
+  const queryEmbedding = await getQueryEmbedding(query);
+  // Send the query embedding to your backend for searching
+  fetch('/api/search', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ embedding: queryEmbedding }),
+  })
+  .then(response => response.json())
+  .then(results => {
+    console.log('Search results:', results);
+    // Update your UI with the search results
+  });
+}
+```
+
+**3. Querying the Vector Database (Backend Code):**
+
+```javascript
+// Conceptual Next.js API route (/pages/api/search.js)
+import { Pinecone } from '@pinecone-database/pinecone'; // Example using Pinecone
+
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
+    const { embedding } = req.body;
+
+    // Initialize Pinecone (replace with your actual credentials)
+    const pinecone = new Pinecone({
+      apiKey: process.env.PINECONE_API_KEY,
+      environment: process.env.PINECONE_ENVIRONMENT,
+    });
+    const index = pinecone.Index('your-index-name'); // Replace with your index name
+
+    try {
+      const queryResponse = await index.query({
+        vector: embedding,
+        topK: 10, // Number of results to return
+        includeValues: false,
+        includeMetadata: true, // Assuming you stored metadata with your embeddings
+      });
+
+      const results = queryResponse.matches.map(match => ({
+        id: match.id,
+        metadata: match.metadata,
+        score: match.score,
+      }));
+
+      res.status(200).json(results);
+    } catch (error) {
+      console.error('Error querying Pinecone:', error);
+      res.status(500).json({ error: 'Failed to perform search' });
+    }
+  } else {
+    res.setHeader('Allow', ['POST']);
+    res.status(405).end(`Method ${req.method} Not Allowed`);
+  }
+}
+```
 
 
 ## Khushi Gupta: Fooling AI: The Hidden Threat of One-Pixel Attacks
