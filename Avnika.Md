@@ -31,4 +31,22 @@ We will miss you immensely. You lived life full of colour and celebrated every m
 
 - Rekha Masi You will remain in my heart tilleternity !
 
+## ahd friends
+- sonal vishal patel: Very Hard To believe this 
+Very very Shocking
+May Her Soul rest in Atmost Peace
+My condolences to the family💐
 
+
+## karan pu friends
+
+supreet : Oh damn. So sorry for ur loss.
+
+
+## kk house
+- mummy: You are always be there in our heart.
+
+
+
+## karan socgen
+- prajisha : I am extremely sorry for your loss. 💔Condolences to you and your family.
