@@ -1,5 +1,8 @@
 
 
+## surana 
+- chandani Heartfelt condolences Bhaiya...!! 😢 May her soul rest in peace..!! May God give you the strength to deal with the loss.
+
 ## friends across continents 
 - rahil badiyani Dear Karan and the entire family,
 
@@ -26,6 +29,6 @@ Nikki di,
 
 We will miss you immensely. You lived life full of colour and celebrated every moment with utmost elegance. May your soul rest in eternal peace. Om Shanti. 🙏
 
-
+- Rekha Masi You will remain in my heart tilleternity !
 
 
