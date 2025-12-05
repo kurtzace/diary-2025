@@ -47,6 +47,10 @@ supreet : Oh damn. So sorry for ur loss.
 - mummy: You are always be there in our heart.
 
 
+## melbourne friends 
+- Shilpa: Hi Karan, so sorry to hear this and thinking of you all during this difficult time! Still remember you both fondly from your short stay in Melbourne. Please take care and pass our sincere condolences to Madhulika Aunty and the entire family.
+
+
 
 ## karan socgen
 - prajisha : I am extremely sorry for your loss. 💔Condolences to you and your family.
