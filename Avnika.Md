@@ -45,11 +45,14 @@ supreet : Oh damn. So sorry for ur loss.
 
 ## kk house
 - mummy: You are always be there in our heart.
+- guddu: This is not fair. She was too precious to go. You left me alone bhabhi
 
 
 ## melbourne friends 
 - Shilpa: Hi Karan, so sorry to hear this and thinking of you all during this difficult time! Still remember you both fondly from your short stay in Melbourne. Please take care and pass our sincere condolences to Madhulika Aunty and the entire family.
 
+- radhika: 
+This is so heartbreaking and shocking. I am truly sorry for your loss. My deepest condolences to you, Aryaveer and rest of the family. May you have the strength to bear this loss and pray for her soul to rest in peace 🙏
 
 
 ## karan socgen
